@@ -4,53 +4,13 @@
 
 Por ahora ustedes solo pueden consultar la base de datos. Su usuario es "moleculab" y la contraseña "moleculab". Pueden ver los datos de todas las tablas y ver que formato tiene cada una.
 
-<!-- blank line -->
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src="videos/open_connect.webm" type="video/webm">
-  </video>
-</figure>
-<!-- blank line -->
-
 
 2. Ejercicios para hacer consultas en SQL
 
-  a. Seleccionar todas las columnas de la tabla individuos.
+  a. Seleccionar todas las columnas de la tabla individuos.[ejercicio 1](videos/ej1.webm)
 
-  <!-- blank line -->
-  <figure class="video_container">
-    <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-      <source src="videos/ej1.webm" type="video/webm">
-    </video>
-  </figure>
-  <!-- blank line -->
+  b. Unir la tabla de individuos y la tabla de ejemplares. [ejercicio 2](videos/ej2.webm)
 
-  b. Unir la tabla de individuos y la tabla de ejemplares.
+  c. Filtrar la tabla del punto b para quedarnos solo con los ejemplares de jalisco [ejercicio 3](videos/ej3.webm)
 
-  <!-- blank line -->
-  <figure class="video_container">
-    <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-      <source src="videos/ej2.webm" type="video/webm">
-    </video>
-  </figure>
-  <!-- blank line -->
-
-  c. Filtrar la tabla del punto b para quedarnos solo con los ejemplares de jalisco
-
-  <!-- blank line -->
-  <figure class="video_container">
-    <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-      <source src="videos/ej3.webm" type="video/webm">
-    </video>
-  </figure>
-  <!-- blank line -->
-
-  d. Resumir tabla de individuos y contar cuantos hay por estado.
-
-  <!-- blank line -->
-  <figure class="video_container">
-    <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-      <source src="videos/ej4.webm" type="video/webm">
-    </video>
-  </figure>
-  <!-- blank line -->
+  d. Resumir tabla de individuos y contar cuantos hay por estado. [ejercicio 4](videos/ej4.webm)

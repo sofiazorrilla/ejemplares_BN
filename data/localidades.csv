@@ -1,0 +1,311 @@
+,id_individuo,desc_localidad
+1,1,"La Union, Bue Vista"
+2,2,Sierra More; sendero corto 800m
+3,2,Sierra More; sendero corto 800m
+4,3,Sierra More
+5,4,Sierra More
+6,5,Sierra More
+7,6,Sierra More; sendero corto 800m
+8,6,Sierra More; sendero corto 800m
+9,7,Sierra More; sendero corto 800m
+10,7,Sierra More; sendero corto 800m
+11,8,Sierra More; sendero corto 800m
+12,8,Sierra More; sendero corto 800m
+13,9,Sierra More; sendero corto 800m
+14,9,Sierra More; sendero corto 800m
+15,10,Sierra More; sendero corto 800m
+16,300,Sierra More
+17,11,Sierra More; sendero corto 800m
+18,11,Sierra More; sendero corto 800m
+19,12,Sierra More; sendero corto 800m
+20,12,Sierra More; sendero corto 800m
+21,13,"La Union, Bue Vista"
+22,14,"La Union, Bue Vista"
+23,15,Colombia
+24,16,Carretera a Motozintla
+25,17,Carretera a Motozintla
+26,18,Carretera a Motozintla
+27,19,Carretera a Motozintla
+28,20,Carretera a Motozintla
+29,21,Carretera a Motozintla
+30,22,Carretera a Motozintla
+31,23,Carretera a Motozintla
+32,30,Sierra More; sendero corto 800m
+33,31,Sierra More; sendero corto 800m
+34,32,Sierra More; sendero corto 800m
+35,33,Sierra More; sendero corto 800m
+36,34,Camino entre Cosautlán y Baxtla
+37,35,NA
+38,36,Reserva del Bicenterio
+39,37,NA
+40,39,Sierra More; sendero corto 800m
+41,39,Sierra More; sendero corto 800m
+42,40,Cerca de la cabecera municipal
+43,41,Cerca de la cabecera municipal
+44,42,Cerca de la cabecera municipal
+45,43,Cerca de la cabecera municipal
+46,44,Cerca de la cabecera municipal
+47,45,Cerca de la cabecera municipal
+48,46,Cerca de la cabecera municipal
+49,47,Cerca de la cabecera municipal
+50,48,Cerca de la cabecera municipal
+51,49,Camino entre Cosautlán y Baxtla
+52,50,Belisario Domìnguez
+53,51,Belisario Domìnguez
+54,52,Sierra More
+55,299,Sierra More
+56,53,El triunfo; Cerca a Finca Liquidambar
+57,54,Lagu del Cofre
+58,55,Atzingo
+59,56,Atzingo
+60,57,Las Cañadas
+61,58,Oxtlapa
+62,59,Oxtlapa
+63,60,Oxtlapa
+64,61,Xiutetelco
+65,62,Tenango de Doria
+66,63,NA
+67,65,La union Bue vista
+68,66,NA
+69,67,NA
+70,68,Camino entre Cosautlán y Teocelo
+71,69,NA
+72,70,Oxtlapa
+73,71,NA
+74,72,NA
+75,73,NA
+76,74,NA
+77,75,NA
+78,76,NA
+79,77,NA
+80,78,Sierra More
+81,79,Monte Grande
+82,80,Monte Grande
+83,81,Monte Grande
+84,82,Monte Grande
+85,83,Monte Grande
+86,84,NA
+87,85,NA
+88,86,Cerca de la cabecera municipal
+89,87,Cerca de la cabecera municipal
+90,88,Cerca de la cabecera municipal
+91,89,Cerca de la cabecera municipal
+92,90,Cerca de la cabecera municipal
+93,91,Cerca de la cabecera municipal
+94,92,Cerca de la cabecera municipal
+95,94,Colombia
+96,95,Sierra More
+97,96,Sierra More
+98,97,Sierra More
+99,98,Sierra More
+100,99,Sierra More
+101,100,Sierra More
+102,101,Sierra More
+103,102,Sierra More
+104,103,Sierra More
+105,104,Sierra More
+106,105,Sierra More
+107,106,La union Bue Vista
+108,107,La union Bue Vista
+109,108,La union Bue Vista
+110,109,La union Bue Vista
+111,110,La union Bue Vista
+112,111,La union Bue Vista
+113,112,La union Bue Vista
+114,113,La union Bue Vista
+115,121,NA
+116,122,NA
+117,124,NA
+118,125,NA
+119,126,NA
+120,127,Las Cañadas
+121,128,NA
+122,129,NA
+123,130,NA
+124,131,Xiutetelco
+125,132,5 palos
+126,133,5 palos
+127,134,5 palos
+128,135,5 palos
+129,136,Tlanchinol; sobre la coli al lado de la carretera
+130,140,NA
+131,141,San Antonio
+132,142,San Antonio
+133,143,San Antonio
+134,144,NA
+135,145,NA
+136,146,Monte Grande
+137,147,Monte Grande
+138,148,Monte Grande
+139,149,Monte Grande
+140,150,Monte Grande
+141,151,Monte Grande
+142,152,NA
+143,153,NA
+144,154,Atzingo
+145,155,Las Cañadas
+146,156,Las Cañadas
+147,157,Las Cañadas
+148,158,Las Cañadas
+149,159,Monte Grande
+150,160,Monte Grande
+151,161,Monte Grande
+152,162,Cuale
+153,163,Cuale
+154,164,9km al Sur de Surutato; Sobre carretera hacia Surutato
+155,165,Monte Grande
+156,167,Monte Grande
+157,168,Monte Grande
+158,169,Camino entre Cosautlán y Baxtla
+159,170,Camino entre Cosautlán y Baxtla
+160,171,Camino entre Cosautlán y Baxtla
+161,172,NA
+162,173,NA
+163,174,Monte Grande
+164,175,Monte Grande
+165,176,Monte Grande
+166,179,Monte Grande
+167,180,Monte Grande
+168,181,Monte Grande
+169,182,Monte Grande
+170,185,NA
+171,186,NA
+172,187,Reserva del Bicenterio
+173,188,NA
+174,189,Aquismo
+175,190,NA
+176,191,Cuetzalan
+177,192,17km al Noreste de Choix
+178,193,18km al Noreste de Badiraguato
+179,194,18km al Noreste de Badiraguato
+180,195,NA
+181,200,NA
+182,201,NA
+183,202,NA
+184,203,NA
+185,204,NA
+186,205,NA
+187,207,Aquismo
+188,211,NA
+189,212,Lachiguiri
+190,213,Las animas
+191,214,Etucuaro; Villa Madero
+192,215,Etucuaro; Villa Madero
+193,216,NA
+194,217,NA
+195,218,Las Cañadas
+196,219,5 palos
+197,220,NA
+198,221,NA
+199,222,Camino entre Cosautlan y Baxtla
+200,223,Camino entre Cosautlán y Baxtla
+201,224,Camino entre Cosautlan y Baxtla
+202,225,Camino entre Cosautlan y Baxtla
+203,227,Totutla
+204,228,Totutla
+205,229,Totutla
+206,231,UMA La Noria; Camino al Vedario
+207,234,Sobre carretera Yecora- La Colorada
+208,236,8km al noreste de Tacuichamo; camino por brecha
+209,237,8km al Noreste de Tacuichamo; camino por brecha
+210,238,18km al noreste de Badiraguato
+211,239,18km al noreste de Badiraguato
+212,240,9km al sur de Surutato; Sobre carretera a Surutato
+213,241,9km al sur de Surutato; Sobre carretera a Surutato
+214,242,9km al sur de Surutato; Sobre carretera a Surutato
+215,243,17km al noreste de Choix
+216,244,17km al noreste de Choix
+217,245,17km al noreste de Choix
+218,246,17km al noreste de Choix
+219,247,18km al noreste de Alamos
+220,248,18km al noreste de Alamos
+221,249,9km al sur de Surutato; Sobre carretera hacia surutato
+222,250,"6 palos; pasando filo de caballo, rumbo a los bajos"
+223,251,Teposcolula
+224,253,"La culebra; pasando filo de caballo, rumbo a los bajos"
+225,254,Iyotla; Cañada cerca al rio
+226,255,Amatitlan
+227,256,Iyotla; Cañada cerca al rio
+228,257,Durazno del Rosario
+229,258,Durazno del Rosario
+230,259,Durazno del Rosario
+231,274,Oxtlapa
+232,297,Morelia
+233,298,San Antonio
+234,24,San Antonio; Camino al Paraje el Retén
+235,25,San Antonio; Camino al Paraje el Retén
+236,26,San Antonio; Camino al Paraje el Retén
+237,27,San Antonio; Camino al Paraje el Retén
+238,28,San Antonio; Camino al Paraje el Retén
+239,29,San Antonio; Camino al Paraje el Retén
+240,38,Eloxochitlan; sobre vereda de ciclistas
+241,64,San Antonio; camino al paraje el Retèn
+242,93,San Antonio; camino al paraje el Retèn
+243,114,San Antonio; Camino al Paraje el Reten
+244,115,San Antonio; Camino al Paraje el Reten
+245,116,San Antonio; Camino al Paraje el Reten
+246,117,San Antonio; Camino al Paraje el Reten
+247,118,San Antonio; Camino al Paraje el Reten
+248,119,San Antonio; Camino al Paraje el Reten
+249,120,San Antonio; Camino al Paraje el Reten
+250,123,San Antonio; Camino al Paraje el Retén
+251,137,San Antonio; Camino al Paraje el Retén
+252,137,San Antonio; Camino al Paraje el Retén
+253,138,San Antonio; Camino al Paraje el Retén
+254,138,San Antonio; Camino al Paraje el Retén
+255,139,San Antonio; Camino al Paraje el Retén
+256,166,"Santa fe lachao; 3.5km al Sureste de la desviacion a Lachao viejo, hacia puerto escondido"
+257,177,"Santa Fe Lachao; 3.5km al sureste de la desviacion a Lachao viejo, hacia puerto escondido"
+258,178,"Santa Fe Lachao; 3.5km al sureste de la desviacion a Lachao viejo, hacia puerto escondido"
+259,196,Oxtlapa
+260,197,Oxtlapa
+261,198,Xiutetelco
+262,199,Tengo de Doria
+263,208,Eloxochitlan; sobre vereda de ciclistas
+264,209,Eloxochitlan; sobre vereda de ciclistas
+265,210,Manzano; rumbo a la cienega de Gonzalez
+266,226,Eloxochitlan; sobre vereda de ciclistas
+267,230,Aquismo
+268,232,4km al SW de la Petaca
+269,233,4km al SW de la Petaca
+270,235,4km al SW  de la Petaca
+271,252,San Martin Atexcal; sobre el arroyo
+272,260,Filo de caballo
+273,261,Filo de caballo; desviacion a puentecillos rumbo a carrizal de bravos
+274,262,El sereno; cañada cerca al arrollo
+275,263,La felicidad; entre Iyotla y el Balsamar
+276,264,La felicidad; entre Iyotla y el Balsamar
+277,265,La felicidad; entre Iyotla y el Balsamar
+278,266,"Chilac; Cima del cerro, camino a la virgen"
+279,267,"Chilac; Cima del cerro, camino a la virgen"
+280,268,"Chilac; Cima del cerro, camino a la virgen"
+281,269,Santiago Tengo; Cima del cerro
+282,270,Santiago Tengo; Cima del cerro
+283,271,Nicolas Bravo
+284,272,Nicolas Bravo
+285,273,Nicolas Bravo
+286,275,Mexcalcuautla
+287,276,Los bajos; rumbo al Jilguero
+288,277,Eloxochitlan; sobre vereda de ciclistas
+289,278,Manzano; Rumbo a la cienega de Gonzalez
+290,279,Manzano; Rumbo a la cienega de Gonzalez
+291,280,Manzano; Rumbo a la cienega de Gonzalez
+292,281,Manzano; Rumbo a la cienega de Gonzalez
+293,282,Manzano; Rumbo a la cienega de Gonzalez
+294,283,Mexcalcuautla
+295,284,Eloxochitlan; Sobre vereda de ciclistas
+296,285,Tlanchinol; sobre la coli alado de la carretera
+297,287,Mexcalcautla
+298,288,Eloxochitlan; sobre vereda de ciclistas
+299,290,Hierba Santa; cañada sobre el rio
+300,291,Potosi
+301,292,Manzano; rumbo a la cienega de Gonzalez
+302,293,Cerro el Potosi; ladera exposicion noreste
+303,294,Cerro el Potosi
+304,295,El sereno; Cañada cerca al arrollo
+305,296,Tlanchinol; sobre la coli al lado de la carretera
+306,183,Cuale
+307,184,Cuale
+308,206,Tetela de Ocampo; cerca del rio
+309,286,Xilitla
+310,289,Tengo de Doria

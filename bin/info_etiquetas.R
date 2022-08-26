@@ -3,6 +3,7 @@ library("tidygeocoder")
 library(tidyverse)
 library(sp)
 library(elevatr)
+library(readxl)
 
 ## Leer la base de datos de google drive y darle formato 
 
@@ -10,9 +11,12 @@ library(elevatr)
 
 data <- read_sheet("https://docs.google.com/spreadsheets/d/1V_I9P1PLCvbQlBw3BCMpELiWZFF1ofelMJgs7lAnZ0I/edit?usp=sharing", sheet = "fin", col_types = 'iiccciccccccddiccDc') 
 
+data <- read_excel("../data/Etiquetas_oaxaca_febrero2022.xlsx", sheet = "ESPECÍMENES")
+
 ## Seleccionar los campos que se utilizaran en las etiquetas
 
 info_et <- data %>% as.data.frame()
+info_et$caja <- 7
 
 ## codigo antiguo no correr
 #info_et <- data %>% filter(ETIQUETA == "NO") %>% select(row,Codigo,DUPLICADOS,Longitude_gps,Latitude_gps,ALTITUD,Pais,Estado,Municipio,Localidad,Fecha_colecta,Colectores) %>% drop_na() %>% as.data.frame()
@@ -32,6 +36,6 @@ etiquetas <- info_et[reps,]
 
 ## Grabar un csv para usar en word. Hay que quitar el signo # y correrlo.
 
-write.table(etiquetas, "../outputs/info_etiquetas050422.csv",sep = ";",row.names = F)
+write.table(etiquetas, "../outputs/info_etiquetas260422.csv",sep = ";",row.names = F)
 
  

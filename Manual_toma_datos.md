@@ -123,8 +123,10 @@ En esta sección el objetivo es describir los principales errores que cometimos 
 ### En campo
 
 **GPS**
+
 3. Temporalmente escoger un prefijo inicial y llevar un registro adecuado de qué coordenadas corresponden a cada ejemplar. En lo posible marcar una coordenada por árbol. (*Al final de la salida se debe entregar la tabla con las coordenadas asociadas a cada individuo, los codigos del gps son temporales*)
-3. De preferencia no tomar coordenadas con celular (especialmente dentro del bosque). En caso de que si conseguir altitud y precisión con el gps.
+  - De preferencia no tomar coordenadas con celular (especialmente dentro del bosque). En caso de que si conseguir altitud y precisión con el gps.
+
 4. Tomar medidas de precisión horizontal y vertical en el GPS.
 
 **Metadatos**

@@ -1,0 +1,92 @@
+---
+format: 
+    html
+params:
+    min: NA
+    max: NA
+    min_id_ejemplar: NA
+
+---
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+# Para correr este script se necesita calcular el número de etiquetas totales y correr con el siguiente comando: 
+# Nota: Solo se pueden crear archivos de a lo más 200 etiquetas. 
+# Ejemplo: quarto render labels.qmd -P min:1 -P max:100 -P min_id_ejemplar:1361 -o labels_1_100.html
+# min para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere iniciar
+# max para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere terminar
+
+
+library(flextable)
+library(tidyverse)
+library(knitr)
+
+info_etiquetas <- read.csv("resultados_colecta_ejemplares.csv")
+
+
+## Loop para crear un vector con los indices de las filas de acuerdo al numero de duplicados que hay. El objetivo es poder multiplicar el numero de filas para que sea igual al numero de etiquetas que se necesitan.
+
+reps <- c()
+for(i in 1:nrow(info_etiquetas)){
+
+  r <- rep(as.numeric(rownames(info_etiquetas[i,])),info_etiquetas[[i,"ejemplares"]])
+  reps <- c(reps,r) 
+}
+
+# Duplicar filas
+data <- info_etiquetas[reps,] %>%
+            mutate(id_ejemplar = seq(params$min_id_ejemplar,(params$min_id_ejemplar-1)+nrow(info_etiquetas[reps,]),1))
+
+
+tbl <- list()
+results <- c()
+
+for(i in params$min:params$max){
+
+    info <- as.data.frame(matrix(ncol = 3, nrow = 11))
+
+    info[1,2]  <-  "UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO ESCUELA NACIONAL DE ESTUDIOS SUPERIORES, MORELIA"
+    info[2,1] <- paste("Pais:",data$Pais[i])
+    info[2,2] <- paste("Estado:",data$Estado[i])
+    info[3,1] <- paste("Municipio:",data$Municipio[i])
+    info[4,1] <- paste("Localidad:",data$Localidad[i])
+    info[5,1] <- paste("Latitud:",data$Latitud[i])
+    info[5,2] <- paste("Longitud:",data$Longitud[i])
+    info[5,3] <- paste("Prec. \nhorizontal (m):",data$Prec_horizontal[i])
+    info[6,1] <- paste("Altitud:",format(as.numeric(data$Altitud[i]), digits = 1))
+    info[6,2] <- paste("ID ejemplar:",data$id_ejemplar[i])
+    info[7,1] <- paste("Cogo campo:",data$codigo_colecta[i])
+    info[7,2] <- paste("ID individuo:",data$id_individuo[i])
+    info[8,1] <- paste("Colectores:",data$Colectores[i])
+    info[9,1] <- paste("Tipo veg.:",data$Tipo_vegetacion[i], "(INFyS*:", data$TIP_VEG_INFyS[i],")")
+    info[10,1] <- paste("Fecha de colecta:",data$Fecha_colecta[i])
+    info[11,1] <- paste("Determinó:")
+
+
+    tbl[[i]] <- flextable(info) %>%
+        merge_at(i = 1, j = 2:3)%>%
+        merge_at(i = 2, j = 2:3)%>%
+        merge_at(i = 3, j = 1:3)%>%
+        merge_at(i = 4, j = 1:3)%>%
+        merge_at(i = 6, j = 2:3)%>%
+        merge_at(i = 7, j = 2:3)%>%
+        merge_at(i = 8, j = 1:3)%>%
+        merge_at(i = 9, j = 1:3)%>%
+        merge_at(i = 10, j = 1:3)%>%
+        merge_at(i = 11, j = 1:3)%>%
+        mk_par(j =1, i = 1, value = as_paragraph(as_image(src = "logo.png", width = 1, height = 1)))%>%
+        delete_part(part = "header")%>%
+        theme_box()
+
+    tbl[[i]] <- autofit(tbl[[i]])%>%
+        width(j = 1, width = 3, unit = "in")
+
+    results <- c(results, knit_print(tbl[[i]]))
+}
+
+asis_output(results)
+
+```

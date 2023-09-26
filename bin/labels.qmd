@@ -5,6 +5,7 @@ params:
     min: NA
     max: NA
     min_id_ejemplar: NA
+    path_to_coordinates: NA
 
 ---
 
@@ -21,10 +22,12 @@ params:
 
 
 library(flextable)
+library(googlesheets4)
 library(tidyverse)
 library(knitr)
 
-info_etiquetas <- read.csv("resultados_colecta_ejemplares.csv")
+gs4_auth(email="sofia.zorrilla95@gmail.com")
+info_etiquetas <- read_sheet(params$path_to_coordinates, sheet = 1, col_types = 'dddccccccccccddddcccDc')
 
 
 ## Loop para crear un vector con los indices de las filas de acuerdo al numero de duplicados que hay. El objetivo es poder multiplicar el numero de filas para que sea igual al numero de etiquetas que se necesitan.
@@ -32,7 +35,7 @@ info_etiquetas <- read.csv("resultados_colecta_ejemplares.csv")
 reps <- c()
 for(i in 1:nrow(info_etiquetas)){
 
-  r <- rep(as.numeric(rownames(info_etiquetas[i,])),info_etiquetas[[i,"ejemplares"]])
+  r <- rep(as.numeric(rownames(info_etiquetas)[i]),info_etiquetas[[i,"ejemplares"]])
   reps <- c(reps,r) 
 }
 
@@ -61,7 +64,7 @@ for(i in params$min:params$max){
     info[7,1] <- paste("Cogo campo:",data$codigo_colecta[i])
     info[7,2] <- paste("ID individuo:",data$id_individuo[i])
     info[8,1] <- paste("Colectores:",data$Colectores[i])
-    info[9,1] <- paste("Tipo veg.:",data$Tipo_vegetacion[i], "(INFyS*:", data$TIP_VEG_INFyS[i],")")
+    info[9,1] <- paste("Tipo veg.:",data$Tipo_vegetacion[i])#, "(INFyS*:", data$TIP_VEG_INFyS[i],")")
     info[10,1] <- paste("Fecha de colecta:",data$Fecha_colecta[i])
     info[11,1] <- paste("Determinó:")
 

@@ -1,4 +1,4 @@
-# Extraer elevación 
+# Extraer elevación de los archivos gpx
 
 import pandas as pd
 import os

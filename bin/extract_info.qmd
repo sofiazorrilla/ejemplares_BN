@@ -3,6 +3,7 @@ title: "Extracción de informacion"
 author: "Sofía"
 ---
 
+Objetivo: Extraer información del tipo de vegetación de las capas estatales de la capa de recursos forestales de CONAFOR (![Ejemplo metadatos capa de Chiapas](Metadatos_INFyS.pdf))
 
 
 ```{r}

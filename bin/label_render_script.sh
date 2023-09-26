@@ -8,8 +8,10 @@
 
 # Define the range and step values
 min_range=1
-max_range=270
+max_range=84
 step=50
+ss="https://docs.google.com/spreadsheets/d/121j3-WTRLWDTDmYH-bZ9eTLDdUvtPrmcqY4eLixgz50/edit?usp=sharing"
+min_id_ejemplar=1630
 
 # Loop through the range in steps
 for ((i=min_range; i<=max_range; i+=step)); do
@@ -23,7 +25,7 @@ for ((i=min_range; i<=max_range; i+=step)); do
     fi
 
     # Construct the command with the calculated values
-    command="quarto render labels.qmd -P min:$min -P max:$max -P min_id_ejemplar:1361 -o labels_${min}_${max}.html"
+    command="quarto render labels.qmd -P min:$min -P max:$max -P min_id_ejemplar:$min_id_ejemplar -P path_to_coordinates:$ss -o labels_${min}_${max}.html"
 
     # Execute the command
     echo "Executing command: $command"

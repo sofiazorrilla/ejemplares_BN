@@ -58,7 +58,9 @@ Una de las funciones del script es extender la tabla de información para que ha
 
 - `min_id_ejemplar`: Automaticamente el script asigna el id de los ejemplares cuando extiende la tabla. En este parámetro hay que poner el número en el que tiene que iniciar (el consecutivo al último número en la base de datos).
 
-- `path_to_coordinates`: El link de google drive para la hoja con las coordenadas. Nota: Hay que configurar el acceso a google drive utilizando el paquete [`googlesheets4`](https://googlesheets4.tidyverse.org/articles/googlesheets4.html). La primera vez que se utiliza el paquete va a pedir autorización en una ventana emergente del navegador. 
+- `path_to_coordinates`: El link de google drive para la hoja con las coordenadas. Nota: Hay que configurar el acceso a google drive utilizando el paquete [`googlesheets4`](https://googlesheets4.tidyverse.org/articles/googlesheets4.html). La primera vez que se utiliza el paquete va a pedir autorización en una ventana emergente del navegador.
+
+- `col_types:` Código con los tipos de columna (d = número con decimales, D = fecha, c = caracter)
 
 - `o` Nombre del archivo de etiquetas. 
 

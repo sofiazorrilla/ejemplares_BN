@@ -6,6 +6,7 @@ params:
     max: NA
     min_id_ejemplar: NA
     path_to_coordinates: NA
+    col_types: NA
 
 ---
 
@@ -13,6 +14,8 @@ params:
 ```{r}
 #| echo: false
 #| warning: false
+#| layout-ncol: 2
+#| column: screen
 
 # Para correr este script se necesita calcular el número de etiquetas totales y correr con el siguiente comando: 
 # Nota: Solo se pueden crear archivos de a lo más 200 etiquetas. 
@@ -27,7 +30,7 @@ library(tidyverse)
 library(knitr)
 
 gs4_auth(email="sofia.zorrilla95@gmail.com")
-info_etiquetas <- read_sheet(params$path_to_coordinates, sheet = 1, col_types = 'dddccccccccccddddcccDc')
+info_etiquetas <- read_sheet(params$path_to_coordinates, sheet = 1, col_types = params$col_types) #'dddccccccccccddddcccDc'
 
 
 ## Loop para crear un vector con los indices de las filas de acuerdo al numero de duplicados que hay. El objetivo es poder multiplicar el numero de filas para que sea igual al numero de etiquetas que se necesitan.

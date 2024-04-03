@@ -64,7 +64,7 @@ for(i in params$min:params$max){
     info[5,3] <- paste("Prec. \nhorizontal (m):",data$Prec_horizontal[i])
     info[6,1] <- paste("Altitud:",format(as.numeric(data$Altitud[i]), digits = 1))
     info[6,2] <- paste("ID ejemplar:",data$id_ejemplar[i])
-    info[7,1] <- paste("Cogo campo:",data$codigo_colecta[i])
+    info[7,1] <- paste("Código campo:",data$codigo_colecta[i])
     info[7,2] <- paste("ID individuo:",data$id_individuo[i])
     info[8,1] <- paste("Colectores:",data$Colectores[i])
     info[9,1] <- paste("Tipo veg.:",data$Tipo_vegetacion[i])#, "(INFyS*:", data$TIP_VEG_INFyS[i],")")

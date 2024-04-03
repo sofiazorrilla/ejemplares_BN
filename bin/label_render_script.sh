@@ -7,11 +7,11 @@
 # max para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere terminar
 
 # Define the range and step values
-min_range=1
-max_range=84
-step=50
-ss="https://docs.google.com/spreadsheets/d/121j3-WTRLWDTDmYH-bZ9eTLDdUvtPrmcqY4eLixgz50/edit?usp=sharing"
-min_id_ejemplar=1630
+# min_range=1
+# max_range=84
+# step=50
+# ss="https://docs.google.com/spreadsheets/d/121j3-WTRLWDTDmYH-bZ9eTLDdUvtPrmcqY4eLixgz50/edit?usp=sharing"
+# min_id_ejemplar=NA
 
 # Loop through the range in steps
 for ((i=min_range; i<=max_range; i+=step)); do

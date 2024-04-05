@@ -3,7 +3,7 @@ library(googlesheets4)
 
 ## Comando para generar las etiquetas
 
-#quarto render labels.qmd -P min:1 -P max:71 -P min_id_ejemplar:2011 -P path_to_coordinates:"https://docs.google.com/spreadsheets/d/1dymbG-dIjeXGbZNJ_-4p44JDXZDvfKNcnfdRCtS4Tu0/edit?usp=sharing" -P col_types:"ddcccccddddccDcccccc" -o labels_1_71.html
+#quarto render labels.qmd -P min:1 -P max:70 -P min_id_ejemplar:2011 -P path_to_coordinates:"https://docs.google.com/spreadsheets/d/1dymbG-dIjeXGbZNJ_-4p44JDXZDvfKNcnfdRCtS4Tu0/edit?usp=sharing" -P col_types:"ddcccccccddddcccccDcc" -o labelsZamorano_1_71.html
 
 ## Generar tabla individuos_ejemplares
 

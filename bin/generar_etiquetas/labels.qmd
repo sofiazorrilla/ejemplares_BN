@@ -24,6 +24,13 @@ params:
 # min para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere iniciar
 # max para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere terminar
 
+# params <- list(
+#     min = 1,
+#     max = 72,
+#     min_id_ejemplar = 2081,
+#     path_to_coordinates = "https://docs.google.com/spreadsheets/d/1Q0Opw6UTIkwRMabAbcWCRXcAG15sq-2u7M1LR9vxYJI/edit?usp=sharing"
+# )
+
 
 library(flextable)
 library(googlesheets4)
@@ -47,6 +54,7 @@ for(i in 1:nrow(info_etiquetas)){
 data <- info_etiquetas[reps,] %>%
             mutate(id_ejemplar = seq(params$min_id_ejemplar,(params$min_id_ejemplar-1)+nrow(info_etiquetas[reps,]),1))
 
+data[is.na(data)] <- ""
 
 tbl <- list()
 results <- c()
@@ -69,6 +77,7 @@ for(i in params$min:params$max){
     info[7,2] <- paste("ID individuo:",data$id_individuo[i])
     info[8,1] <- paste("Colectores:",data$Colectores[i])
     info[9,1] <- paste("Tipo veg.:",data$Tipo_vegetacion[i])#, "(INFyS*:", data$TIP_VEG_INFyS[i],")")
+    info[9,2] <- paste("Nombre científico:", data$Nombre_cientifico[i])
     info[10,1] <- paste("Fecha de colecta:",data$Fecha_colecta[i])
     info[11,1] <- paste("Determinó:")
 
@@ -81,7 +90,7 @@ for(i in params$min:params$max){
         merge_at(i = 6, j = 2:3)%>%
         merge_at(i = 7, j = 2:3)%>%
         merge_at(i = 8, j = 1:3)%>%
-        merge_at(i = 9, j = 1:3)%>%
+        merge_at(i = 9, j = 2:3)%>%
         merge_at(i = 10, j = 1:3)%>%
         merge_at(i = 11, j = 1:3)%>%
         mk_par(j =1, i = 1, value = as_paragraph(as_image(src = "logo.png", width = 1, height = 1)))%>%

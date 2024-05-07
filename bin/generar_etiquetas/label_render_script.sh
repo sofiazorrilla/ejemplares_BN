@@ -7,11 +7,12 @@
 # max para el numero de fila de la informacion de las etiquetas expandidas (data) del que se quiere terminar
 
 # Define the range and step values
-# min_range=1
-# max_range=84
-# step=50
-# ss="https://docs.google.com/spreadsheets/d/121j3-WTRLWDTDmYH-bZ9eTLDdUvtPrmcqY4eLixgz50/edit?usp=sharing"
-# min_id_ejemplar=NA
+min_range=1
+max_range=72
+step=50
+ss="https://docs.google.com/spreadsheets/d/1Q0Opw6UTIkwRMabAbcWCRXcAG15sq-2u7M1LR9vxYJI/edit?usp=sharing"
+min_id_ejemplar=2081
+col_types="c"
 
 # Loop through the range in steps
 for ((i=min_range; i<=max_range; i+=step)); do
@@ -25,7 +26,7 @@ for ((i=min_range; i<=max_range; i+=step)); do
     fi
 
     # Construct the command with the calculated values
-    command="quarto render labels.qmd -P min:$min -P max:$max -P min_id_ejemplar:$min_id_ejemplar -P path_to_coordinates:$ss -o labels_${min}_${max}.html"
+    command="quarto render labels.qmd -P min:$min -P max:$max -P min_id_ejemplar:$min_id_ejemplar -P path_to_coordinates:$ss -P col_types:$col_types -o labels_${min}_${max}.html"
 
     # Execute the command
     echo "Executing command: $command"
